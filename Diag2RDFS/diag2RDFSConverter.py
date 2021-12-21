@@ -72,7 +72,7 @@ class Diag2RDFSConverter:
             for row in csvReader:
                 if row["Name"] in ["Document", "Page", "Text"]:
                     self.diagMetaData.append(row)
-                if row["Name"] == "Class":
+                if row["Name"] in ["Class", "RDF Class"]:
                     self.diagClassData.append(row)
                 if row["Name"] == "Line":
                     self.diagLinkData.append(row)
