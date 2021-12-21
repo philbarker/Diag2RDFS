@@ -1,0 +1,1 @@
+from .diag2RDFSConverter import Diag2RDFSConverter
