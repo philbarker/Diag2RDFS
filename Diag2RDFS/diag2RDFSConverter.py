@@ -156,7 +156,7 @@ class Diag2RDFSConverter:
 
         Locally defined properties are fully defined, those from other namespaces defer to the external definition."""
         for line in self.diagLinkData:
-            p_uris = line[text_1].split("\n")
+            p_uris = line[text_1].split()
             source = self.getLinkSource(line)
             destination = self.getLinkDestination(line)
             for p_uri in p_uris:
