@@ -58,7 +58,7 @@ def splitCurie(curie, namespaces):
         ns_id = parts[0]
     else:
         print(curie)
-        msg = "CURIe should have two colons ':' in it."
+        msg = "CURIe should have one colon ':' in it."
         raise ValueError(msg)
     if ns_id in namespaces.keys():
         uriref = str2uriref(curie, namespaces)
